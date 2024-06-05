@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #FF5555;
+  --secondary-color: #ffed4a;
+  --font-size-base: 16px;
+}
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--secondary-color);
+}
+
+/* For Webkit */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: 3px solid var(--secondary-color);
+}
+/* App.css */
+@keyframes fadeScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header-animation {
+  animation: fadeScale 0.5s ease-in-out;
+}
+
+.hero-animation {
+  animation: fadeScale 0.5s ease-in-out;
+}
+
+.feature-animation {
+  animation: fadeSlide 0.5s ease-in-out;
+}
+
+.app-features-animation {
+  animation: fadeSlide 0.5s ease-in-out;
+}
+
+.testimonials-animation {
+  animation: fadeSlide 0.5s ease-in-out;
+}
+
+.questions-animation {
+  animation: fadeSlide 0.5s ease-in-out;
+}
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: rgba(3, 3, 8, 0.973);
+  color: white;
+}
