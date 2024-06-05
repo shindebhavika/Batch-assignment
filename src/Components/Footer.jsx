@@ -51,11 +51,11 @@ function Footer({theme}) {
      <div className="relative">
   {/* Blurred image */}
  
-  <img src="../public/images/blur1.png" alt="" className=" relative w-1/5" />
-  <img src="../public/images/star.png" alt="" className=" " />
-  <img src="../public/images/star.png" alt="" className=" ml-[100%] mb-2" />
+  <img src="/images/blur1.png" alt="" className=" relative w-1/5" />
+  <img src="/images/star.png" alt="" className=" " />
+  <img src="/images/star.png" alt="" className=" ml-[100%] mb-2" />
   {/* Frame image */}
-  <img src="../public/images/frame.png" alt="" className="w-full " />
+  <img src="/images/Frame.png" alt="" className="w-full " />
 
   <div
     className="absolute text-white"
@@ -85,7 +85,7 @@ function Footer({theme}) {
       <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
         <div className="col mb-3 flex-1 mr-6">
           <p className="">
-            <img src="../public/images/logo.png" alt="" />
+            <img src="/images/logo.png" alt="" />
           </p>
           <p className="font-medium flex gap-2">
             <i className="bi bi-envelope-fill text-[#FF5555] text-lg"></i>
